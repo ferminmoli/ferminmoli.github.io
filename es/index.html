@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fermín Molinuevo — Ingeniero de software senior</title>
-  <meta name="description" content="Ingeniero de software senior en Roldán, Santa Fe, Argentina. Sistemas backend con Elixir, Phoenix y PostgreSQL en iSeatz desde 2019, y creador de MOZIC, una plataforma para músicos.">
+  <meta name="description" content="Ingeniero de software senior en Roldán, Argentina. En iSeatz desde 2019, en plataformas de viajes, reservas y fidelización, y creador de MOZIC, una plataforma para músicos.">
   <meta name="author" content="Fermín Molinuevo">
   <link rel="canonical" href="https://ferminmoli.github.io/es/">
   <link rel="alternate" hreflang="en" href="https://ferminmoli.github.io/">
@@ -14,31 +14,32 @@
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Fermín Molinuevo">
   <meta property="og:title" content="Fermín Molinuevo — Ingeniero de software senior">
-  <meta property="og:description" content="Sistemas backend confiables con Elixir y Phoenix, y productos propios. Creador de MOZIC.">
+  <meta property="og:description" content="Ingeniero de software en iSeatz desde 2019. Creador de MOZIC, una plataforma para músicos.">
   <meta property="og:url" content="https://ferminmoli.github.io/es/">
   <meta property="og:image" content="https://ferminmoli.github.io/assets/og-es.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Fermín Molinuevo — Ingeniero de software senior">
+  <meta property="og:image:alt" content="Fermín Molinuevo, ingeniero de software senior.">
   <meta property="og:locale" content="es_AR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="profile:first_name" content="Fermín">
   <meta property="profile:last_name" content="Molinuevo">
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#f4f4f1">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Fermín Ariel Molinuevo",
-    "alternateName": "Fermín Molinuevo",
+    "alternateName": ["Fermín Molinuevo", "Fer Molinuevo"],
     "url": "https://ferminmoli.github.io/es/",
     "jobTitle": "Ingeniero de software senior",
     "worksFor": { "@type": "Organization", "name": "iSeatz" },
@@ -51,230 +52,293 @@
   </script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 16 16"><path d="M2.5 4h11v8h-11zM2.5 4.5 8 9l5.5-4.5"/></symbol>
+  </svg>
+
   <a class="skip-link" href="#main">Saltar al contenido</a>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="wordmark" href="/es/" aria-label="Fermín Molinuevo, inicio">Fermín Molinuevo</a>
-      <nav class="site-nav" aria-label="Principal">
+      <a class="mark" href="./" aria-label="Fermín Molinuevo, inicio">Fermín Molinuevo</a>
+      <nav class="nav" aria-label="Principal">
         <ul>
-          <li class="nav-section"><a href="#trabajo">Trabajo</a></li>
-          <li class="nav-section"><a href="#experiencia">Experiencia</a></li>
-          <li class="nav-section"><a href="#como-trabajo">Cómo trabajo</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li class="lang-switch"><a href="/" hreflang="en" lang="en" aria-label="Read in English">EN</a></li>
+          <li class="sec"><a href="#experiencia">Experiencia</a></li>
+          <li class="sec"><a href="#proyectos">Proyectos personales</a></li>
+          <li class="sec"><a href="#formacion">Formación</a></li>
+          <li class="sec"><a href="#musica">Música</a></li>
+          <li class="sec"><a href="#contacto">Contacto</a></li>
+          <li class="lang"><a href="../" hreflang="en" lang="en" aria-label="Read in English">EN</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="intro-title">
-      <div class="wrap">
-        <p class="eyebrow">Ingeniero de software senior · Roldán, Santa Fe, Argentina</p>
-        <h1 id="intro-title">Sistemas backend que se sostienen en producción, y <em>productos propios</em>.</h1>
-        <p class="lead">Trabajo en iSeatz desde 2019, construyendo software de reservas y de comercio para programas de lealtad, hoy principalmente con Elixir, Phoenix y PostgreSQL. Me importan las partes que definen si un sistema es confiable: APIs claras, procesos en segundo plano que fallan de forma segura, tests que vale la pena mantener y la observabilidad necesaria para saber qué está pasando realmente en producción. En mi tiempo propio construyo <a href="https://www.mozic.app/es" rel="noopener">MOZIC</a>, una plataforma para músicos.</p>
-        <div class="hero-actions">
-          <a class="button" href="mailto:fermin.molinuevo@gmail.com">Enviar un email</a>
-          <a class="text-link arrow" href="#trabajo">Ver trabajo seleccionado</a>
-        </div>
-        <dl class="facts">
-          <div><dt>Hoy</dt><dd>Ingeniero de software en iSeatz, equipo remoto con base en EE. UU.</dd></div>
-          <div><dt>Foco</dt><dd>Elixir · Phoenix · PostgreSQL · Redis · procesamiento asíncrono · APIs</dd></div>
-          <div><dt>Construyendo</dt><dd>MOZIC, con Next.js, en acceso anticipado</dd></div>
-          <div><dt>Idiomas</dt><dd>Español (nativo) · Inglés (avanzado)</dd></div>
-        </dl>
-      </div>
-    </section>
 
-    <section class="section" id="trabajo" aria-labelledby="work-title">
+    <section class="hero" aria-labelledby="name">
       <div class="wrap">
-        <div class="section-head">
-          <span class="section-num">01 — Trabajo seleccionado</span>
-          <h2 id="work-title">Un producto que estoy construyendo, y el tipo de trabajo que hago en equipo.</h2>
-        </div>
-
-        <article class="case" aria-labelledby="mozic-title">
-          <div class="case-intro">
-            <div>
-              <div class="case-title">
-                <h3 id="mozic-title">MOZIC</h3>
-                <span class="tag">Producto propio · Acceso anticipado</span>
-              </div>
-              <p class="lead">Una plataforma para el lado laboral de la música: canciones, listas, ensayos, reservas de salas y clases en un solo lugar, más un directorio público donde se encuentran artistas, salas de ensayo, estudios, docentes, servicios y lugares para tocar, por ciudad.</p>
-              <p>Los músicos suelen tener su material repartido entre grupos de chat, PDFs y apps de notas, mientras que salas y docentes gestionan reservas y alumnos por mensaje. Encontrar una sala o un luthier en una ciudad suele depender de preguntar. MOZIC es mi intento de darle a cada uno de esos roles una herramienta propia, y de conectarlos.</p>
-              <p><a class="text-link ext" href="https://www.mozic.app/es" rel="noopener">Visitar mozic.app</a></p>
+        <h1 id="name"><span>Fermín</span> <span>Molinuevo</span></h1>
+        <div class="hero-grid">
+          <div class="hero-id">
+            <p class="role"><span>Ingeniero de software senior</span></p>
+            <p class="where">Roldán, Santa Fe, Argentina. Trabajo en remoto.</p>
+            <div class="actions">
+              <a class="btn primary" href="mailto:fermin.molinuevo@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg> Escribime</a>
+              <a class="btn" href="https://www.linkedin.com/in/ferm%C3%ADn-molinuevo-76023b67/" rel="noopener">LinkedIn <svg class="ico out" aria-hidden="true"><use href="#i-out"/></svg></a>
+              <a class="btn" href="https://github.com/ferminmoli" rel="noopener">GitHub <svg class="ico out" aria-hidden="true"><use href="#i-out"/></svg></a>
             </div>
-            <dl class="case-meta">
-              <div><dt>Mi rol</dt><dd>Creador. Defino el producto y lo construyo.</dd></div>
-              <div><dt>Estado</dt><dd>Público desde mayo de 2026, en acceso anticipado y gratuito. Varias herramientas están marcadas como “disponible en prueba” mientras se ajustan con uso real.</dd></div>
-              <div><dt>Stack (visible públicamente)</dt><dd>Aplicación web con Next.js en Vercel, ingreso con Google, interfaz en español e inglés.</dd></div>
-              <div><dt>Para quién</dt><dd>Músicos y bandas, salas de ensayo y estudios, docentes, servicios como luthiers o backline, y lugares para tocar.</dd></div>
-            </dl>
           </div>
-
-          <div class="shots">
-            <figure class="shot">
-              <div class="frame"><img src="/assets/mozic-home.jpg" width="1280" height="577" loading="lazy" decoding="async" alt="Página de inicio de MOZIC (versión en inglés) con el titular “Less chaos. More music.”, botones para empezar gratis o explorar, y una ilustración de músicos ensayando."></div>
-              <figcaption>Página de inicio pública (versión en inglés).</figcaption>
-            </figure>
-            <figure class="shot">
-              <div class="frame"><img src="/assets/mozic-live.jpg" width="1000" height="882" loading="lazy" decoding="async" alt="Modo en vivo de MOZIC con una canción de ejemplo: acordes sobre la letra, agrupados en intro, estrofa y estribillo."></div>
-              <figcaption>Modo en vivo con una lista de ejemplo, usable sin cuenta.</figcaption>
-            </figure>
+          <div class="hero-about">
+            <p>Desde 2019 trabajo en iSeatz en plataformas de viajes, reservas y fidelización. Me importan los sistemas que un equipo puede operar y en los que puede confiar, y fuera del trabajo construyo productos propios, como MOZIC.</p>
+            <div class="tech">
+              <h2>Tecnologías con las que trabajo actualmente</h2>
+              <ul class="chips">
+                <li>Elixir</li><li>Phoenix</li><li>PostgreSQL</li><li>Redis</li><li>OpenTelemetry</li><li>Sumo Logic</li><li>LaunchDarkly</li><li>GitHub Actions</li><li>Next.js</li>
+              </ul>
+            </div>
           </div>
-
-          <div>
-            <h4 class="subhead">Decisiones de producto y técnicas que se ven en el producto</h4>
-            <ul class="decisions">
-              <li>
-                <h5>Privado por defecto</h5>
-                <p>Canciones, listas, ensayos y materiales quedan en el espacio de cada usuario. Solo lo que alguien publica explícitamente aparece en su página pública o en el directorio.</p>
-              </li>
-              <li>
-                <h5>Funciona en el escenario, sin señal</h5>
-                <p>El modo en vivo, con desplazamiento automático, transposición y lectura grande, funciona sin conexión. Una sala de ensayo o un escenario son el peor lugar para depender de internet.</p>
-              </li>
-              <li>
-                <h5>Partir del material que la gente ya tiene</h5>
-                <p>Importación desde PDF, Guitar Pro, MIDI y MusicXML; ChordPro se conserva al editar; los cancioneros se imprimen o exportan a PDF; canciones y listas se pueden exportar.</p>
-              </li>
-              <li>
-                <h5>Una plataforma, roles distintos</h5>
-                <p>Espacios separados por proyecto o banda. Las salas tienen agenda, reserva online, lista de espera y turnos fijos semanales; los docentes, cursos, alumnos y cuotas; los lugares para tocar publican su calendario y reciben propuestas de fechas.</p>
-              </li>
-              <li>
-                <h5>Pensado para ser encontrado</h5>
-                <p>Rutas bilingües y páginas de directorio por ciudad, por ejemplo salas de ensayo o clases de música en Rosario, CABA y La Plata, publicadas en un sitemap para que los buscadores las indexen.</p>
-              </li>
-              <li>
-                <h5>Transparente sobre dónde está</h5>
-                <p>Hoja de ruta y registro de cambios públicos, funciones marcadas “en prueba” hasta que el uso real las respalde, condiciones de acceso anticipado que no piden tarjeta, y cookies opcionales que quedan desactivadas salvo que se acepten.</p>
-              </li>
-            </ul>
-          </div>
-
-          <p class="note">También soy músico. MOZIC es el punto donde eso y mi trabajo como ingeniero se encuentran.</p>
-        </article>
-
-        <div class="cases-grid">
-          <article class="card" aria-labelledby="arch-title">
-            <span class="eyebrow">En iSeatz · Arquitectura y documentación</span>
-            <h3 id="arch-title">Un backend de varios servicios, fácil de levantar y de entender</h3>
-            <p>Trabajo sobre el entorno de desarrollo compartido de un backend compuesto por varios servicios y sus dependencias, para que ingenieros y QA puedan tener un entorno funcionando sin depender de conocimiento informal.</p>
-            <ul>
-              <li>Entornos locales en contenedores con Docker Compose, incluyendo bases de datos, cachés y servicios cloud emulados.</li>
-              <li>Guías escritas que explican cómo se conectan los servicios y cómo correrlos contra entornos compartidos.</li>
-              <li>Configuración consistente entre servicios a medida que cambian.</li>
-            </ul>
-            <p class="fine">Descripto en términos generales. Nombres internos, código y datos de clientes son confidenciales.</p>
-          </article>
-
-          <article class="card" aria-labelledby="obs-title">
-            <span class="eyebrow">En iSeatz · Observabilidad y calidad</span>
-            <h3 id="obs-title">Trazas, logs y controles que dicen la verdad</h3>
-            <p>Hacer visible el comportamiento de los servicios y que los cambios sean seguros de publicar, en colaboración cercana con QA y producto.</p>
-            <ul>
-              <li>Trazas distribuidas con OpenTelemetry, con la opción de usarlas también en local mientras se desarrolla.</li>
-              <li>Configuración de logs consistente entre entornos.</li>
-              <li>Tests automatizados con ExUnit e integración continua con GitHub Actions.</li>
-              <li>Actualizaciones de runtime y dependencias a partir de avisos de seguridad.</li>
-              <li>Convertir reportes de bugs en casos reproducibles junto con QA.</li>
-            </ul>
-            <p class="fine">Descripto en términos generales. Nombres internos, código y datos de clientes son confidenciales.</p>
-          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="experiencia" aria-labelledby="exp-title">
       <div class="wrap">
-        <div class="section-head">
-          <span class="section-num">02 — Experiencia</span>
-          <h2 id="exp-title">Siete años en una misma empresa, y el camino que llevó hasta ahí.</h2>
-        </div>
+        <header class="section-head">
+          <h2 id="exp-title">Experiencia</h2>
+        </header>
 
-        <div class="timeline">
-          <article class="job" aria-labelledby="iseatz-title">
-            <p class="job-when">Oct 2019 — Hoy</p>
-            <div>
-              <h3 id="iseatz-title">iSeatz</h3>
-              <p class="where">Tecnología de reservas, viajes y comercio para programas de lealtad · Remoto, con un equipo basado en Nueva Orleans, EE. UU.</p>
-              <p>Empecé en aplicaciones Ruby on Rails y después pasé a servicios en Elixir y Phoenix que integran proveedores externos. En todos estos años el trabajo tuvo el mismo centro: construir y mantener servicios backend, mejorar cómo se operan y se observan, y trabajar de cerca con QA y producto para que lo que se publica coincida con lo que se acordó.</p>
-              <ul class="roles">
-                <li><strong>Elixir/Phoenix Developer</strong><span class="dates">Ene 2024 — Hoy</span><p>Servicios backend para una plataforma de reservas que integra proveedores externos: APIs, PostgreSQL, Redis, procesamiento asíncrono, observabilidad e integración continua.</p></li>
-                <li><strong>Software Developer</strong><span class="dates">Dic 2022 — Ene 2024</span><p>Desarrollo en Ruby on Rails para productos de comercio digital y lealtad, con foco en rendimiento de la aplicación y eficiencia de la base de datos.</p></li>
-                <li><strong>Senior Software Developer</strong><span class="dates">Oct 2019 — Dic 2022</span><p>Desarrollo de aplicaciones en Ruby on Rails.</p></li>
-              </ul>
-            </div>
+        <article class="exp-lead" aria-labelledby="iseatz-title">
+          <p class="years" aria-hidden="true">2019<b>hoy</b></p>
+          <div class="exp-body">
+            <h3 id="iseatz-title">Ingeniero de software senior</h3>
+            <p class="org"><strong>iSeatz</strong>, oct. 2019 a hoy</p>
+            <ul class="badges"><li class="badge now">Actual</li><li class="badge">Remoto</li></ul>
+            <p class="summary">Tecnología de viajes, reservas y programas de fidelización, en remoto con un equipo de Estados Unidos. Entré como desarrollador senior y, desde fines de 2022, también asumo responsabilidades de liderazgo técnico, sin un cargo formal de líder. Trabajo con desarrollo, QA, analistas de negocio, producto y responsables técnicos.</p>
+            <ul class="points">
+              <li>Desde 2024 desarrollo servicios en Elixir y Phoenix: APIs, PostgreSQL, caché con Redis y Nebulex, pipelines con Broadway sobre SQS y trabajos en segundo plano con Oban.</li>
+              <li>Impulsé un Architecture Hub para centralizar la documentación técnica: hice una prueba de concepto con Astro y Starlight y después lo publiqué internamente, con buena recepción de los responsables técnicos.</li>
+              <li>Armé dashboards en Sumo Logic para latencia p95, errores, versiones y comportamientos atípicos, y trabajo en observabilidad y diagnóstico de servicios con OpenTelemetry.</li>
+              <li>Documenté las reglas para feature flags en LaunchDarkly y preparé una revisión automática de solicitudes de flags: nombres, claves, tags, ambientes, rollout y expiración.</li>
+              <li>Funcionalidades y correcciones en integraciones de reservas, seguros de viaje y fidelización, entre ellas acreditación de puntos, reglas para pasajeros menores, personalización de órdenes, precios y autenticación de pagos.</li>
+              <li>Reorganicé suites de tests y mejoré la cobertura funcional, reproduzco problemas junto con QA e impulso verificar los cambios en local antes de aprobarlos.</li>
+              <li>Participé en un playbook para habilitar mercados nuevos y en mejoras de configuración con YAML, y llevé el stack local a contenedores con Docker Compose.</li>
+              <li>De 2019 a 2023, desarrollo en Ruby on Rails para productos de comercio digital y fidelización, incluido trabajo de rendimiento de la aplicación y eficiencia de la base de datos.</li>
+            </ul>
+            <ul class="chips stackline" aria-label="Tecnologías en iSeatz">
+              <li>Elixir</li><li>Phoenix</li><li>PostgreSQL</li><li>Redis</li><li>Nebulex</li><li>Broadway</li><li>SQS</li><li>Oban</li><li>OpenSearch</li><li>OpenTelemetry</li><li>Sumo Logic</li><li>LaunchDarkly</li><li>ExUnit</li><li>GitHub Actions</li><li>Ruby on Rails (antes)</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="earlier">
+          <h3>Antes</h3>
+          <article class="job" aria-labelledby="ds-title">
+            <p class="when">jul. 2017 a ago. 2020</p>
+            <div class="what"><h4 id="ds-title">Senior Developer</h4><p class="company">Digital Solutions, Miami, FL, EE. UU.</p></div>
+            <p class="summary">Aplicaciones de negocio en .NET y JavaScript: un sistema de gestión y facturación para Santa Margherita, grupo vitivinícola internacional italiano, y un sistema de gestión de pasantes.</p>
+            <ul class="chips job-chips"><li>.NET</li><li>ASP.NET MVC</li><li>SQL Server</li><li>AngularJS</li><li>jQuery</li><li>IIS</li></ul>
           </article>
-
-          <article class="job" aria-labelledby="earlier-title">
-            <p class="job-when">2012 — 2023</p>
-            <div>
-              <h3 id="earlier-title">Antes</h3>
-              <p class="where">Producto, consultoría y desarrollo a medida, mayormente con .NET y JavaScript antes de pasar a Ruby y Elixir.</p>
-              <ul class="earlier">
-                <li><strong>TENIO · Cofundador</strong><span class="dates">2018 — 2023</span><p>Una app móvil para organizar torneos de tenis amateur, hecha con Ruby on Rails e Ionic.</p></li>
-                <li><strong>Digital Solutions · Senior Developer</strong><span class="dates">2017 — 2020</span><p>Aplicaciones de negocio en .NET y JavaScript, entre ellas un sistema de facturación y un sistema de gestión de pasantes.</p></li>
-                <li><strong>Velocity Partners · Semi-Senior y luego Senior Developer</strong><span class="dates">2015 — 2018</span><p>Aplicaciones centrales para inspección de edificios, front end y back end; migraciones de aplicaciones y automatización de build y despliegue. .NET, Angular, Ionic, Scrum.</p></li>
-                <li><strong>Globant · Developer y luego Semi-Senior Developer</strong><span class="dates">2012 — 2014</span><p>Aplicaciones internas para un cliente grande y herramientas de testing automatizado para apps de Windows. .NET, AngularJS.</p></li>
-              </ul>
-            </div>
+          <article class="job" aria-labelledby="vp-title">
+            <p class="when">abr. 2015 a oct. 2018</p>
+            <div class="what"><h4 id="vp-title">Semi-Senior y luego Senior Developer</h4><p class="company">Velocity Partners, Rosario, Argentina</p></div>
+            <p class="summary">Aplicaciones centrales para inspección de edificios, en front end y back end. Antes, migración de aplicaciones a nuevos entornos para una compañía eléctrica y TransCanada y automatización de su build y despliegue con PowerShell.</p>
+            <ul class="chips job-chips"><li>.NET</li><li>ASP.NET MVC</li><li>SQL Server</li><li>AngularJS</li><li>Angular</li><li>Ionic</li><li>TeamCity</li><li>Octopus Deploy</li><li>Scrum</li></ul>
           </article>
-
-          <article class="job" aria-labelledby="edu-title">
-            <p class="job-when">2007 — 2012</p>
-            <div>
-              <h3 id="edu-title">Formación</h3>
-              <dl class="edu">
-                <div><dt>Título</dt><dd>Ingeniería en Sistemas de Información</dd></div>
-                <div><dt>Universidad</dt><dd>Universidad Tecnológica Nacional, Facultad Regional Rosario</dd></div>
-              </dl>
-            </div>
+          <article class="job" aria-labelledby="gl-title">
+            <p class="when">ago. 2012 a sep. 2014</p>
+            <div class="what"><h4 id="gl-title">Developer y luego Semi-Senior Developer</h4><p class="company">Globant, Rosario, Argentina</p></div>
+            <p class="summary">Aplicaciones empresariales para un cliente grande, en front end y back end, entre ellas una aplicación que recomienda el mejor producto para cada cliente, con documentación UML y modelado de base de datos. Antes, una aplicación de Microsoft que probaba automáticamente apps de Windows 8 (Metro).</p>
+            <ul class="chips job-chips"><li>.NET</li><li>ASP.NET MVC</li><li>WCF</li><li>SQL Server</li><li>Microsoft Dynamics CRM</li><li>AngularJS</li><li>Knockout.js</li><li>PowerShell</li><li>Agile</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="como-trabajo" aria-labelledby="approach-title">
+    <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
       <div class="wrap">
-        <div class="section-head">
-          <span class="section-num">03 — Cómo trabajo</span>
-          <h2 id="approach-title">Algunos hábitos que llevo a cualquier equipo.</h2>
+        <header class="section-head">
+          <h2 id="projects-title">Proyectos personales</h2>
+          <p>Productos y herramientas que construyo en mi tiempo libre.</p>
+        </header>
+
+        <article class="feature" aria-labelledby="mozic-title">
+          <div class="feature-text">
+            <h3 id="mozic-title">MOZIC</h3>
+            <ul class="badges"><li class="badge now">En línea</li><li class="badge">Acceso anticipado</li></ul>
+            <p class="tagline">Una plataforma para músicos y el ecosistema musical.</p>
+            <p class="summary">Canciones, listas, ensayos, reservas de salas y clases en un solo lugar, con un directorio público de artistas, salas de ensayo, estudios, docentes y servicios por ciudad. Surge de mi experiencia como músico. Defino y priorizo el producto, lo diseño y lo construyo, tomo las decisiones técnicas y de infraestructura, y hablo directamente con potenciales usuarios. Está en una etapa inicial de adopción.</p>
+            <ul class="points">
+              <li>Privado por defecto: solo lo que publicás llega a tu página pública o al directorio.</li>
+              <li>El modo en vivo funciona sin conexión, como PWA con almacenamiento local, para salas y escenarios sin señal.</li>
+              <li>Importa PDF, Guitar Pro, MIDI y MusicXML, para que los músicos partan del material que ya tienen.</li>
+            </ul>
+            <div class="actions">
+              <a class="btn primary" href="https://www.mozic.app/es" rel="noopener">Visitar mozic.app <svg class="ico out" aria-hidden="true"><use href="#i-out"/></svg></a>
+              <ul class="chips on-dark"><li>Next.js</li><li>PostgreSQL en Neon</li><li>Vercel</li><li>Cloudflare R2</li><li>PWA con modo sin conexión</li></ul>
+            </div>
+          </div>
+          <div class="feature-media">
+            <a class="shot" href="https://www.mozic.app/es/for-you/music" rel="noopener">
+              <div class="frame">
+                <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>mozic.app</span></div>
+                <img src="../assets/mozic-musicians.jpg" width="1600" height="733" loading="lazy" decoding="async" alt="Página de MOZIC para músicos (versión en inglés): “Your music, in one place.” Canciones con letra y acordes, listas, calendario y un modo en vivo que también funciona sin conexión.">
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <div class="mosaic">
+          <article class="tile lilac t-tabular" aria-labelledby="tlv-title">
+            <div class="top"><h3 id="tlv-title">Tabular LiveView</h3><span class="year">2025</span></div>
+            <p>Componente open source de tablas para Phoenix LiveView: filtros, orden, búsqueda de texto, paginación y exportación a CSV, con una app de demostración.</p>
+            <div class="foot">
+              <ul class="chips"><li>Elixir</li><li>Phoenix LiveView</li></ul>
+              <span class="links"><a class="ext" href="https://github.com/ferminmoli/tabular_live_view" rel="noopener">Código <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a><a class="ext" href="https://github.com/ferminmoli/tabular_live_view_demo" rel="noopener">App demo <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></span>
+            </div>
+          </article>
+          <article class="tile ink t-unifilar" aria-labelledby="uni-title">
+            <div class="top"><h3 id="uni-title">Unifilar</h3><span class="year">2025</span></div>
+            <p>Genera diagramas unifilares eléctricos en SVG a partir de una configuración JSON, con layout automático, símbolos estándar y validación del esquema.</p>
+            <div class="foot">
+              <ul class="chips"><li>TypeScript</li><li>SVG</li><li>Zod</li></ul>
+              <span class="links"><a class="ext" href="https://github.com/ferminmoli/unifilar-v2" rel="noopener">Código <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></span>
+            </div>
+          </article>
+          <article class="tile image t-admin" aria-labelledby="adm-title">
+            <div class="pic"><img src="../assets/angular-admin.jpg" width="1600" height="411" loading="lazy" decoding="async" alt="La demo de Angular Admin Dashboard: una barra lateral y tres tarjetas de estadísticas con gráficos de línea."></div>
+            <div class="body">
+              <div class="top"><h3 id="adm-title">Angular Admin Dashboard</h3><span class="year">2023–2024</span></div>
+              <p>Plantilla open source de panel de administración para Angular 17 y 18 con Tailwind CSS, con licencia MIT.</p>
+              <div class="foot">
+                <ul class="chips"><li>Angular</li><li>Tailwind CSS</li></ul>
+                <span class="links"><a class="ext" href="https://angular-18-admin.vercel.app" rel="noopener">Demo <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a><a class="ext" href="https://github.com/ferminmoli/angular-18-admin" rel="noopener">Código <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></span>
+              </div>
+            </div>
+          </article>
+          <article class="tile peach t-ng" aria-labelledby="ngt-title">
+            <div class="top"><h3 id="ngt-title">NgTabular</h3><span class="year">2024</span></div>
+            <p>Ejemplo de plugin de tablas para Angular, la contraparte de Tabular LiveView. En desarrollo.</p>
+            <div class="foot">
+              <ul class="chips"><li>Angular</li><li>TypeScript</li></ul>
+              <span class="links"><a class="ext" href="https://ng-tabular.vercel.app" rel="noopener">Demo <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a><a class="ext" href="https://github.com/ferminmoli/ng-tabular" rel="noopener">Código <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></span>
+            </div>
+          </article>
+          <article class="tile plain t-phoenix" aria-labelledby="ap-title">
+            <div class="top"><h3 id="ap-title">Angular + Phoenix</h3><span class="year">2024</span></div>
+            <p>App base con un backend en Phoenix y un frontend en Angular 18 con TypeScript.</p>
+            <div class="foot">
+              <ul class="chips"><li>Elixir</li><li>Phoenix</li><li>Angular</li></ul>
+              <span class="links"><a class="ext" href="https://github.com/ferminmoli/angular-phoenix" rel="noopener">Código <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></span>
+            </div>
+          </article>
+          <article class="tile quiet t-tenio" aria-labelledby="tenio-title">
+            <div class="top"><h3 id="tenio-title">TENIO</h3><span class="year">2018–2023</span></div>
+            <p>Cofundé una app móvil para organizar torneos de tenis amateur. Proyecto pasado.</p>
+            <div class="foot">
+              <ul class="chips"><li>Ruby on Rails</li><li>Ionic</li></ul>
+            </div>
+          </article>
         </div>
-        <ul class="principles">
-          <li>
-            <h3>Terminado incluye observable</h3>
-            <p>Si una funcionalidad puede fallar en producción, tiene que dejar trazas y logs que expliquen por qué. Prefiero dedicarle una hora a eso que una noche a adivinar.</p>
+
+        <p class="archive">Experimentos más viejos, como demos de Ionic 2 (2016) y ejercicios en .NET (2015), están en <a class="link" href="https://github.com/ferminmoli?tab=repositories" rel="noopener">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="formacion" aria-labelledby="edu-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="edu-title">Formación e idiomas</h2>
+        </header>
+        <div class="edu-grid">
+          <article class="degree" aria-labelledby="utn-title">
+            <p class="uni" aria-hidden="true">UTN</p>
+            <h3 id="utn-title">Ingeniería en Sistemas de Información</h3>
+            <p class="org"><strong>Universidad Tecnológica Nacional</strong>, Rosario, 2007 a 2012</p>
+            <p class="summary">Título de grado de Ingeniero en Sistemas de Información.</p>
+          </article>
+          <article class="langs-block" aria-labelledby="lang-title">
+            <h3 id="lang-title">Idiomas</h3>
+            <ul class="langs">
+              <li><span>Español</span><span>Nativo</span></li>
+              <li><span>Inglés</span><span>Avanzado</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section beyond" id="musica" aria-labelledby="music-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="music-title">Música</h2>
+          <p>Compongo y produzco mi propia música, y toco guitarra, bajo y piano. De ahí viene MOZIC.</p>
+        </header>
+        <div class="albums">
+          <article class="album">
+            <a href="https://open.spotify.com/album/2nCv5PVJx56BfJVgFIRnol" rel="noopener">
+              <div class="cover"><img src="../assets/music/impulso-lunar.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Portada de Impulso Lunar"></div>
+              <div class="info"><h3>Impulso Lunar</h3><span class="facts">Álbum, 2026, 8 temas</span></div>
+              <span class="listen">Escuchar en Spotify <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span>
+            </a>
+          </article>
+          <article class="album">
+            <a href="https://open.spotify.com/album/065LUFHO4yh2nySooH5Ysq" rel="noopener">
+              <div class="cover"><img src="../assets/music/aurora.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Portada de Aurora"></div>
+              <div class="info"><h3>Aurora</h3><span class="facts">Álbum, 2025, 10 temas</span></div>
+              <span class="listen">Escuchar en Spotify <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span>
+            </a>
+          </article>
+        </div>
+        <h3 class="singles-head">Singles</h3>
+        <ul class="singles">
+          <li class="single">
+            <a href="https://open.spotify.com/album/7xdmWLe3YWV6LiByfxHTbD" rel="noopener" aria-label="Viento a Favor, Single 2025, Escuchar en Spotify">
+              <div class="cover"><img src="../assets/music/viento-a-favor.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></div>
+              <h4>Viento a Favor</h4>
+              <span class="facts">Single, 2025</span>
+            </a>
           </li>
-          <li>
-            <h3>Dejarlo por escrito</h3>
-            <p>Pasos de configuración, cómo encajan los servicios, por qué se eligió una alternativa. Documentos cortos junto al código le ahorran muchas preguntas a la próxima persona, que muchas veces soy yo.</p>
+          <li class="single">
+            <a href="https://open.spotify.com/album/2xr4WsJsuYHHw37UudzLKC" rel="noopener" aria-label="Bajo el Faro, Single 2025, Escuchar en Spotify">
+              <div class="cover"><img src="../assets/music/bajo-el-faro.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></div>
+              <h4>Bajo el Faro</h4>
+              <span class="facts">Single, 2025</span>
+            </a>
           </li>
-          <li>
-            <h3>Cambios chicos, tests que describen comportamiento</h3>
-            <p>Pull requests revisables, tests que se leen como una especificación de lo que el sistema debe hacer, y un pipeline de CI en el que valga la pena confiar.</p>
+          <li class="single">
+            <a href="https://open.spotify.com/album/6vs9PW8AItQgmit4Rp21av" rel="noopener" aria-label="Las Horas, Single 2022, Escuchar en Spotify">
+              <div class="cover"><img src="../assets/music/las-horas.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></div>
+              <h4>Las Horas</h4>
+              <span class="facts">Single, 2022</span>
+            </a>
           </li>
-          <li>
-            <h3>Acordar qué es “terminado” temprano</h3>
-            <p>Desarrollo, QA y producto mirando los mismos criterios de aceptación antes de empezar, no después. Es el arreglo de bugs más barato que existe.</p>
+          <li class="single">
+            <a href="https://open.spotify.com/album/1bdcm1KkyeOHKVt7MRnFJC" rel="noopener" aria-label="Imaginaria, Single 2018, Escuchar en Spotify">
+              <div class="cover"><img src="../assets/music/imaginaria.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></div>
+              <h4>Imaginaria</h4>
+              <span class="facts">Single, 2018</span>
+            </a>
           </li>
         </ul>
-        <p class="toolset"><strong>En el día a día:</strong> Elixir, Phoenix, PostgreSQL, Redis, jobs y colas en segundo plano, APIs REST, OpenTelemetry, ExUnit, Docker, GitHub Actions. Para producto: Next.js. Antes: Ruby on Rails, .NET, Angular.</p>
+        <div class="music-foot">
+          <p>Producido en Ableton Live y Logic Pro.</p>
+          <a class="ext" href="https://open.spotify.com/artist/3q8XEFAj1btj3OS87Q7dwW" rel="noopener">Perfil en Spotify <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </div>
       </div>
     </section>
 
     <section class="section contact" id="contacto" aria-labelledby="contact-title">
       <div class="wrap">
-        <span class="section-num">04 — Contacto</span>
-        <h2 id="contact-title">Hablemos.</h2>
-        <p class="lead">Estoy abierto a conversar sobre roles senior de backend e ingeniería de producto en equipos internacionales. El email es la mejor forma de contactarme.</p>
-        <ul class="contact-links">
-          <li><a href="mailto:fermin.molinuevo@gmail.com"><span class="label">Email</span><span class="value">fermin.molinuevo@gmail.com</span></a></li>
-          <li><a href="https://www.linkedin.com/in/ferm%C3%ADn-molinuevo-76023b67/" rel="noopener me"><span class="label">LinkedIn</span><span class="value ext">Fermín Molinuevo</span></a></li>
-          <li><a href="https://github.com/ferminmoli" rel="noopener me"><span class="label">GitHub</span><span class="value ext">github.com/ferminmoli</span></a></li>
-          <li><a href="https://www.mozic.app/es" rel="noopener"><span class="label">Producto</span><span class="value ext">mozic.app</span></a></li>
+        <header class="section-head">
+          <h2 id="contact-title">Contacto</h2>
+          <p>Para propuestas laborales, proyectos o una charla sobre cualquiera de los dos, el email es la mejor forma de contactarme.</p>
+        </header>
+        <ul class="contact-list">
+          <li><a href="mailto:fermin.molinuevo@gmail.com"><span class="k">Email</span><span class="v">fermin.molinuevo@gmail.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/ferm%C3%ADn-molinuevo-76023b67/" rel="noopener me"><span class="k">LinkedIn</span><span class="v">Fermín Molinuevo <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span></a></li>
+          <li><a href="https://github.com/ferminmoli" rel="noopener me"><span class="k">GitHub</span><span class="v">ferminmoli <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span></a></li>
         </ul>
       </div>
     </section>
@@ -282,8 +346,8 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 Fermín Ariel Molinuevo · Roldán, Santa Fe, Argentina</p>
-      <p><a href="/" hreflang="en" lang="en">English version</a></p>
+      <p>© 2026 Fermín Ariel Molinuevo</p>
+      <p><a class="link" href="../" hreflang="en" lang="en">English version</a></p>
     </div>
   </footer>
 </body>
