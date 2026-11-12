@@ -11,7 +11,8 @@ es/index.html       Spanish page
 styles.css          All styles
 script.js           Marks the section being read in the nav (optional; the site works without JS)
 404.html            Not-found page
-assets/             Favicon, social images, MOZIC screenshots
+assets/             Favicon, social images, portrait, MOZIC screenshot, music covers
+assets/tech.svg     Tech logos for the chips (Simple Icons, CC0)
 assets/fonts/       Bricolage Grotesque (variable, self-hosted, SIL OFL; see OFL.txt)
 sitemap.xml         Both language URLs with hreflang
 robots.txt
