@@ -255,7 +255,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 39.99rem) {
   .hero-top { grid-template-columns: minmax(0, 1fr); }
   .portrait { order: -1; width: 8rem; }
-  
+}
+
 .hero-grid {
   display: grid;
   gap: 2rem var(--col-gap);
